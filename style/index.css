@@ -1,0 +1,221 @@
+form {
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .form {
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 17px;
+}
+form input {
+  border: none;
+  background: #EAEAEA;
+}
+form input::-moz-placeholder {
+  text-align: center;
+}
+form input::placeholder {
+  text-align: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  background-color: #f6f6f6;
+  padding: 30px 0px;
+}
+.top h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.top p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.top button {
+  border-radius: 25px;
+  width: 218px;
+  height: 50px;
+}
+.top button .explore {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 700;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.filters .filter {
+  position: relative;
+}
+.filters .number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: solid 1px #9356DC;
+  background-color: #9356DC;
+  border-radius: 50%;
+  min-width: 24px;
+  min-height: 24px;
+  padding-left: 0px;
+  position: absolute;
+  left: -12px;
+}
+.filters i {
+  color: #7E7E7E;
+}
+.filters span i {
+  color: #9356DC;
+}
+.filters p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.filters .filters__research {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 25px;
+  gap: 36.51px;
+}
+.filters .filters__research div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 22.14px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  height: 72.379px;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.restaurants h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 28px;
+}
+.restaurants .card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.restaurants .card .card__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+.restaurants .card .card__content .pos {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 45px;
+  right: 30px;
+}
+.restaurants .card .card__content .fa-regular:hover {
+  opacity: 0;
+}
+.restaurants .card .card__content .fa-regular {
+  z-index: 3;
+  background: white;
+  transition: all 1s;
+}
+.restaurants .card .img {
+  position: relative;
+}
+.restaurants .card .img span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: #008766;
+}
+.restaurants .card .card__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 18.74px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+.restaurants .card .card__txt h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.restaurants .card .card__txt p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.restaurants .restaurants__position {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 50px;
+}
+.restaurants .margin__bot {
+  margin-bottom: 0px;
+}
+.restaurants .card:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.restaurants .card:hover i {
+  background-color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.restaurants img {
+  border-radius: 15px 15px 0px 0px;
+  height: 231px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants img span {
+  background-color: #99e2d0;
+  width: 80px;
+  height: 29px;
+}
+.restaurants a {
+  display: flex;
+  text-decoration: none;
+  color: #101010;
+}/*# sourceMappingURL=index.css.map */
