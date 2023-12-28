@@ -4,33 +4,15 @@ nav {
     justify-content: center;
     width: 100%;
     a {
-        position: relative;
-        left: -50px;
-        height: 30px;
-        width: 30px;
+        display: flex;
+        position: absolute;
+        justify-content: flex-start;
+        text-decoration: none;
+        left: 30px;
         color: black;
+        font-size: 1.5em;
     }
 }
-
-.loader {
-    width: 100%;
-    height: 100%;
-    border: 5px solid #FFF;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 3s linear infinite;
-    }
-
-    @keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    } 
 
 .menu {
     display: flex;
@@ -41,6 +23,8 @@ nav {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        width: calc(100% - 30px);
+        max-width: 634px;
     }
     .menu__background {
         display: flex;
@@ -58,13 +42,8 @@ nav {
             width: 90%;
           }
         a {
-            display: flex;
-            max-width: 634px;
             text-decoration: none;
             color: #101010;
-            @media (min-width: 1024px) {
-                min-width: 634px;
-              }
         }
     }
     img {
@@ -79,6 +58,21 @@ nav {
         justify-content: flex-start;
         // gap: 24px;
         position: relative;
+        .pos {
+            cursor: pointer;
+            position: absolute;
+            font-size: 1.5em;
+            bottom: 23px;
+            right: -55px;
+        }
+        .fa-regular:hover {
+            opacity: 0;
+        }
+        .fa-regular{
+            z-index: 3;
+            background: white;
+            transition: all 1s ;
+        }
         i {
             cursor: pointer;
             position: absolute;
@@ -112,11 +106,19 @@ nav {
         background-color: #FFF;
         border-radius: 15px;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
-        width: 100%;
         padding: 15px;
         max-height: 42px;
+        &:hover {
+            i {
+                width: 59px;
+                opacity: 1;
+            }
+            .card__icon{
+                width: 59px;
+            }
+        }
         span {
-            padding-left: 55px;
+            padding-left: 5px;
         }
         i {
             position: absolute;
@@ -124,49 +126,58 @@ nav {
             right: 0;
             background-color: #99E2D0;
             border-radius: 0 15px 15px 0;
-            width: 59px;
+            width: 0;
+            // width: 59px; hover sur card
             height: 72px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #f6f6f6;
+            opacity: 0;
+            transition: 1s;
+        }
+        .card__icon {
+            width: 0;
+            transition: 1s;
+            // width: 59px; hover sur card
         }
         .card__content {
             display: flex;
             flex-direction: row;
-        }
-    }
-    .card__txt{
-        display: flex;
-        flex-direction: column;
-        // white-space: nowrap;
-        justify-content: center;
-        // height: 100%;
-        gap: 5px;
-        width: 80%;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        .card__title{
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .card__subtitle {
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        h4 {
-            font-size: 18px;
-            font-weight: 500;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            overflow: hidden;
-        }
-        p {
-            font-size: 15px;
-            font-weight: 300;
-            margin-block-start: 0;
-            margin-block-end: 0;
-            overflow: hidden;
+            .card__txt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 80%;
+                gap: 5px;
+                // width: 80%;
+                flex: 1;
+                overflow: hidden;
+                white-space: nowrap;
+                .card__title{
+                    text-overflow: ellipsis;
+                    text-wrap: nowrap;
+                    overflow: hidden;
+                }
+                .card__subtitle {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-wrap: nowrap;
+                }
+                h4 {
+                    min-width: 200px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                }
+            }
         }
     }
     .card__rating {
@@ -180,8 +191,9 @@ nav {
         width: 186px;
         height: 50px;
         border-radius: 25px;
-        background:(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+        background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
         color: white;
+        margin-bottom: 40px;
         &:hover {
             opacity: 0.8;
         }

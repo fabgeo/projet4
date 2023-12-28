@@ -37,11 +37,16 @@
             <h2 class="title">La palette du goût</h2> <!-- titre --> 
             <div class="heart">
               <i class="fa-regular fa-heart" aria-hidden="true"></i> <!--  --> 
-              <i class="fa-solid fa-heart" aria-hidden="true"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" height="23" width="23" viewBox="0 0 512 512" class="pos">
+                <defs>
+                  <linearGradient id="myGradient" gradientTransform="rotate(90)">
+                    <stop offset="0%" style="stop-color: rgba(147,86,220,1)" />
+                    <stop offset="100%" style="stop-color: rgba(255,121,218,1)" />
+                  </linearGradient>
+                </defs>
+                <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" style="fill: url(#myGradient)" />
+              </svg>
             </div>
-          </div>
-          <div>
-            <span class="loader"></span>
           </div>
          <div class="menu__margin">
             <h3>ENTR&Eacute;E</h3>
@@ -55,7 +60,7 @@
                   <div class="card__rating">
                     <span>25€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -69,9 +74,9 @@
                     <p class="card__subtitle">Et ses copeaux de truffe noire</p>
                   </div>
                   <div class="card__rating">
-                    <p>35€</p>
+                    <span>35€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -87,7 +92,7 @@
                   <div class="card__rating">
                     <span>20€</span>
                   </div>
-                  <div>
+                  <div class="card__icon"> 
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -106,7 +111,7 @@
                   <div class="card__rating">
                     <span>40€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -122,7 +127,7 @@
                   <div class="card__rating">
                     <span>35€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -138,7 +143,7 @@
                   <div class="card__rating">
                     <span>44€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -157,7 +162,7 @@
                   <div class="card__rating">
                     <span>18€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -173,7 +178,7 @@
                   <div class="card__rating">
                     <span>22€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -189,7 +194,7 @@
                   <div class="card__rating">
                     <span>23€</span>
                   </div>
-                  <div>
+                  <div class="card__icon">
                     <span><i class="fa-solid fa-circle-check"></i></span>
                   </div>
                 </div>
@@ -206,7 +211,7 @@
       <div class="footer">
             <div class="a">
               <i class="fa-solid fa-utensils"></i>
-            <a class="foot__nav" href="#">Proposer un restaurant</a> <!-- Lien footer -->
+            <a class="foot__nav" href="#">Proposer un restaurant</a>
             </div>
             <div class="b">
               <i class="fa-solid fa-handshake-angle"></i>
@@ -219,7 +224,7 @@
               <a class="foot__nav" href="#">Contact</a>
             </div>
       </div>
-      <img src="images/Logo.png" alt="Logo du site" /> <!-- photo du logo -->
+      <img src="images/Logo.png" alt="Logo du site" />
   </footer>
   </body>
 </html>
