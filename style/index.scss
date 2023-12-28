@@ -24,10 +24,9 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Roboto;
-    font-style: normal;
     background-color: #f6f6f6;
     padding: 30px 0px;
+    text-align: center;
        h1 {
         color: #000;
         text-align: center;
@@ -57,7 +56,7 @@ form {
     flex-direction: column;
     font-size: 24px;
     font-weight: 700;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 50px 0;
     .filter {
@@ -89,12 +88,15 @@ form {
     }
     .filters__research {
         display: flex;
-        // flex-direction: row; desktop
         flex-direction: column;
         font-size: 16px;
         font-weight: 500;
         margin-top: 25px;
         gap: 36.51px;
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+          }
         div {
             display: flex;
             flex-direction: row; 
@@ -104,7 +106,10 @@ form {
             border-radius: 25px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             height: 72.379px;
-            // flex: 1 1 322.486px; desktop 
+            @media (min-width: 1024px) {
+                display: flex;
+                flex: 1 1 322.486px
+              }
         }
     }
 }
@@ -112,8 +117,9 @@ form {
 .restaurants {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    margin-bottom: 30px;
     h3 {
         font-size: 24px;
         font-weight: 700;
@@ -187,13 +193,13 @@ form {
     .restaurants__position {
         display: flex;
         flex-direction: column;
-        // row pour desktop
         gap: 18px;
-        // gap 100 des
-        margin-bottom: 50px;
-    }
-    .margin__bot {
-        margin-bottom: 0px;
+        margin-bottom: 18px;
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+          }
     }
     .card:hover {
         opacity: 1;
@@ -215,8 +221,12 @@ form {
     }
     a {
         display: flex;
-        // flex: 1 1 490px; desktop
         text-decoration: none;
         color: #101010;
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            flex: 1 1 490px;
+          }
     }
 }

@@ -1,10 +1,18 @@
 footer {
   background-color: #353535;
-  padding: 30px 25px;
+  padding: 22px 25px;
   margin: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: column-reverse;
+  gap: 16px;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }
 footer a {
   text-decoration: none;
@@ -15,15 +23,21 @@ footer a {
 footer .footer {
   display: flex;
   color: white;
-  flex-direction: row;
+  flex-direction: column;
   gap: 7px;
 }
+@media (min-width: 1024px) {
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer .a a {
-  width: 180px;
+  width: 168px;
   margin-left: 11px;
 }
 footer .b a {
-  width: 180px;
+  width: 168px;
   margin-left: 11px;
 }
 footer .c {
@@ -44,6 +58,5 @@ footer .footer_law a {
 }
 footer img {
   width: 139px;
-  margin-left: 16px;
   filter: invert(1);
 }/*# sourceMappingURL=footer.css.map */

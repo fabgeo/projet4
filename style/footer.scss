@@ -1,10 +1,16 @@
 footer {
     background-color: #353535;
-    padding: 30px 25px;
+    padding: 22px 25px;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column-reverse;
+    gap: 16px;
+    margin-top: 0;
+    @media (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
     a {
         text-decoration: none;
         color: white;
@@ -14,15 +20,20 @@ footer {
      .footer {
         display: flex;
         color: white;
-        flex-direction: row;
+        flex-direction: column;
         gap: 7px;
+      //   row
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+      }
      }
      .a a{
-        width: 180px;
+        width: 168px;
         margin-left: 11px;
      }
      .b a{
-        width: 180px;
+        width: 168px;
         margin-left: 11px;
      }
      .c {
@@ -42,7 +53,7 @@ footer {
     }
       img {
         width: 139px;
-        margin-left: 16px;
+      //   margin-left: 16px; des
         filter: invert(1);
       }
 } 

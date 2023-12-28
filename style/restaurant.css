@@ -12,6 +12,25 @@ nav a {
   color: black;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 3s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .menu {
   display: flex;
   flex-direction: column;
@@ -31,15 +50,25 @@ nav a {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
   border-radius: 25px 25px 0px 0px;
   gap: 40px;
+}
+@media (min-width: 1024px) {
+  .menu .menu__background {
+    width: 90%;
+  }
 }
 .menu .menu__background a {
   display: flex;
   max-width: 634px;
   text-decoration: none;
   color: #101010;
+}
+@media (min-width: 1024px) {
+  .menu .menu__background a {
+    min-width: 634px;
+  }
 }
 .menu img {
   width: 100%;
@@ -51,7 +80,7 @@ nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
+  justify-content: flex-start;
   position: relative;
 }
 .menu .menu__title i {
@@ -59,7 +88,7 @@ nav a {
   position: absolute;
   font-size: 1.5em;
   top: 24px;
-  right: -35px;
+  right: -55px;
 }
 .menu .menu__title .fa-solid:hover {
   opacity: 0;
@@ -113,8 +142,18 @@ nav a {
 .menu .card__txt {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 5px;
-  width: 100%;
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .card__txt .card__title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .card__txt .card__subtitle {
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu .card__txt h4 {
@@ -122,16 +161,19 @@ nav a {
   font-weight: 500;
   margin-block-start: 0;
   margin-block-end: 0;
+  overflow: hidden;
 }
 .menu .card__txt p {
   font-size: 15px;
   font-weight: 300;
   margin-block-start: 0;
   margin-block-end: 0;
+  overflow: hidden;
 }
 .menu .card__rating {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   font-size: 15px;
   font-weight: 700;
 }
@@ -140,7 +182,6 @@ nav a {
   height: 50px;
   border-radius: 25px;
   background: 193deg, #9356DC -11.44%, #FF79DA 123.93%;
-  margin-bottom: 40px;
   color: white;
 }
 .menu button:hover {
