@@ -73,7 +73,7 @@ nav a {
 }
 .menu .menu__title .fa-regular {
   z-index: 3;
-  background: white;
+  background: #f6f6f6;
   transition: all 1s;
 }
 .menu .menu__title i {

@@ -70,7 +70,7 @@ nav {
         }
         .fa-regular{
             z-index: 3;
-            background: white;
+            background: #f6f6f6;
             transition: all 1s ;
         }
         i {
@@ -127,7 +127,6 @@ nav {
             background-color: #99E2D0;
             border-radius: 0 15px 15px 0;
             width: 0;
-            // width: 59px; hover sur card
             height: 72px;
             display: flex;
             align-items: center;
@@ -139,7 +138,6 @@ nav {
         .card__icon {
             width: 0;
             transition: 1s;
-            // width: 59px; hover sur card
         }
         .card__content {
             display: flex;
@@ -150,7 +148,6 @@ nav {
                 justify-content: center;
                 width: 80%;
                 gap: 5px;
-                // width: 80%;
                 flex: 1;
                 overflow: hidden;
                 white-space: nowrap;
