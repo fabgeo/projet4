@@ -195,4 +195,30 @@ nav a {
 }
 .menu button:hover {
   opacity: 0.8;
+}
+
+.entrees {
+  animation: anim-card__box 0.4s;
+  animation-duration: 0.4s;
+}
+
+.plats {
+  animation: anim-card__box 1s;
+  animation-duration: 1s;
+}
+
+.desserts {
+  animation: anim-card__box 1.5s;
+  animation-duration: 1.5s;
+}
+
+@keyframes anim-card__box {
+  0% {
+    transform: translateX(-400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=restaurant.css.map */
