@@ -34,7 +34,6 @@ nav {
         flex-direction: column;
         align-items: center;
         margin: auto;
-        // width: 80%; des
         width: 100%;
         border-radius: 25px 25px 0px 0px;
         gap: 40px;
@@ -56,13 +55,17 @@ nav {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        // gap: 24px;
         position: relative;
+        .title {
+            color: Black;
+            font-family: Shrikhand;
+            font-size: 28px;
+        }
         .pos {
             cursor: pointer;
             position: absolute;
             font-size: 1.5em;
-            bottom: 23px;
+            bottom: 33px;
             right: -55px;
         }
         .fa-regular:hover {
@@ -155,6 +158,7 @@ nav {
                     text-overflow: ellipsis;
                     text-wrap: nowrap;
                     overflow: hidden;
+                    font-weight: bold;
                 }
                 .card__subtitle {
                     overflow: hidden;

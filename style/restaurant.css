@@ -61,11 +61,16 @@ nav a {
   justify-content: flex-start;
   position: relative;
 }
+.menu .menu__title .title {
+  color: Black;
+  font-family: Shrikhand;
+  font-size: 28px;
+}
 .menu .menu__title .pos {
   cursor: pointer;
   position: absolute;
   font-size: 1.5em;
-  bottom: 23px;
+  bottom: 33px;
   right: -55px;
 }
 .menu .menu__title .fa-regular:hover {
@@ -158,6 +163,7 @@ nav a {
   text-overflow: ellipsis;
   text-wrap: nowrap;
   overflow: hidden;
+  font-weight: bold;
 }
 .menu .card .card__content .card__txt .card__subtitle {
   overflow: hidden;
