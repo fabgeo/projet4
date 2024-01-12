@@ -22,7 +22,6 @@ footer {
         color: white;
         flex-direction: column;
         gap: 7px;
-      //   row
       @media (min-width: 1024px) {
         display: flex;
         flex-direction: row;
@@ -53,7 +52,6 @@ footer {
     }
       img {
         width: 139px;
-      //   margin-left: 16px; des
         filter: invert(1);
       }
 } 

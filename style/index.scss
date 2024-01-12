@@ -20,6 +20,8 @@ form {
     }
 }
 
+// formulaire
+
 h1 {
     font-size: 24px;
     font-weight: 700;
@@ -29,6 +31,8 @@ h1 {
     display: flex;
     flex-direction: row;
 }
+
+// text haut + boutton
 
 .top{
     display: flex;
@@ -61,6 +65,8 @@ h1 {
         }
        }
 }
+
+// FILTRES
 
 .filters {
     display: flex;
@@ -126,6 +132,8 @@ h1 {
     }
 }
 
+// BODY CARD
+
 .restaurants {
     display: flex;
     flex-direction: column;
@@ -151,6 +159,9 @@ h1 {
         border-radius: 15px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
         width: 100%;
+
+        // coeur
+
         &:hover {
             opacity: 1;
             transform: scale(1.1);
@@ -179,6 +190,11 @@ h1 {
                 transition: all 1s ;
             }
         }
+
+        // COEUR 
+
+        // card NOUVEAU
+
         .img {
             position: relative;
             span {
@@ -194,6 +210,11 @@ h1 {
                 color: #008766;
             }
         }
+
+        // nouveau
+
+        // TEXT CARD
+
         .card__txt{
             display: flex;
             flex-direction: column;
@@ -249,6 +270,8 @@ h1 {
           }
     }
 }
+
+// LOADER
 
 #overlay {
     position: fixed;

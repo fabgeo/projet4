@@ -14,6 +14,8 @@ nav {
     }
 }
 
+// HEADER FLECHE
+
 .menu {
     display: flex;
     flex-direction: column;
@@ -26,6 +28,9 @@ nav {
         width: calc(100% - 30px);
         max-width: 634px;
     }
+
+    // menu background position image
+
     .menu__background {
         display: flex;
         position: relative;
@@ -58,8 +63,18 @@ nav {
         position: relative;
         .title {
             color: Black;
-            font-family: Shrikhand;
+            font-family: "Shrikhand", roboto, sans-serif;
             font-size: 28px;
+        }
+
+        // coeur 
+
+        i {
+            cursor: pointer;
+            position: absolute;
+            font-size: 1.5em;
+            top: 32px;
+            right: -55px;
         }
         .pos {
             cursor: pointer;
@@ -76,13 +91,6 @@ nav {
             background: #f6f6f6;
             transition: all 1s ;
         }
-        i {
-            cursor: pointer;
-            position: absolute;
-            font-size: 1.5em;
-            top: 24px;
-            right: -55px;
-        }
         .fa-solid:hover {
             opacity: 0;
             color: transparent;
@@ -95,6 +103,9 @@ nav {
         font-weight: 300;
         margin-block-start: 0;
         margin-block-end: 0;
+
+        // Titre Entré Plat Dessert
+
         &::after {
             position: absolute;
             bottom: -2px;
@@ -111,6 +122,8 @@ nav {
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
         padding: 15px;
         max-height: 42px;
+
+        // ANIMATION COCHE
         &:hover {
             i {
                 width: 59px;
@@ -142,6 +155,9 @@ nav {
             width: 0;
             transition: 1s;
         }
+
+        // ANIMATION COCHE 
+
         .card__content {
             display: flex;
             flex-direction: row;
@@ -201,6 +217,9 @@ nav {
         }
     }
  }
+
+ // ANIMATION APPARITION 
+ 
  .entrees {
     animation: anim-card__box 0.4s;
     animation-duration: 0.4s;

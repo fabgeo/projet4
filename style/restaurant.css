@@ -63,8 +63,15 @@ nav a {
 }
 .menu .menu__title .title {
   color: Black;
-  font-family: Shrikhand;
+  font-family: "Shrikhand", roboto, sans-serif;
   font-size: 28px;
+}
+.menu .menu__title i {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5em;
+  top: 32px;
+  right: -55px;
 }
 .menu .menu__title .pos {
   cursor: pointer;
@@ -80,13 +87,6 @@ nav a {
   z-index: 3;
   background: #f6f6f6;
   transition: all 1s;
-}
-.menu .menu__title i {
-  cursor: pointer;
-  position: absolute;
-  font-size: 1.5em;
-  top: 24px;
-  right: -55px;
 }
 .menu .menu__title .fa-solid:hover {
   opacity: 0;
